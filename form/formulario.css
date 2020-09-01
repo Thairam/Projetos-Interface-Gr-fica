@@ -73,6 +73,11 @@ input#bairro {
     width: 150px;
 }
 
+.botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
 button {
     margin-top: 30px;
 
@@ -86,10 +91,6 @@ button {
     outline: 0;
     transition: 0.5s ease;
     cursor: pointer;  
-}
-
-button#cancelar{
-    margin-right: 70px;
 }
 
 button:hover{
