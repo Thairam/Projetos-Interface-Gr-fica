@@ -16,13 +16,6 @@
     flex-wrap: wrap;
 }
 
-a.content{
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border: 5px solid #fff;
-}
-
 .footer {
     border: 1px solid #000;
     margin-top: 10px;
@@ -58,7 +51,7 @@ a.content{
 }
 
 img {
-    margin-top: 0;
+    margin-top: 20px;
     display: block;
     height: 250px;
     width: 300px;
@@ -71,7 +64,7 @@ img {
 
     border-radius: 10px;
     overflow: hidden;
-    margin: 10px;
+    margin: 12px;
 
     display: flex;
     flex-direction: column;
@@ -93,7 +86,6 @@ img {
 }
 
 .prato .preco {
-    padding: 10px 0px;
     justify-content: left;
     font-size: 1.8rem;
 }
