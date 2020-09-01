@@ -66,3 +66,29 @@ body {
     color: #FFFA;
     font-size: 20px;
 }
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    margin-top: 30px;
+
+    font-size: 1.1rem;
+    min-width: 150px;
+    border-radius: 10px;
+    background-color: #440144;
+    color: #E5C282;
+    padding: 6px;
+
+    outline: 0;
+    cursor: pointer;  
+}
+
+button:hover{
+    transition: 0.5s ease;
+    transform: scale(1.1);
+    box-shadow: 1px 1px 1px 1px #E5C282;
+    /* box-shadow: 5px 5px 5px rgba(0,0,0,0.6); */
+}
