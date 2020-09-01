@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+
+    background-image: url("https://i.vimeocdn.com/video/530015055_640x360.jpg");
+    background-size: cover;    
+}
+.item {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    
+    padding: 10px;
+    border: #260126 2px solid;
+    border-radius: 20px;
+    background-color: #260126;
+
+}
+
+.descricao-pizza {
+    font-size: 50px;   
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.foto-pizza {
+    display: flex;
+    justify-content: center;
+
+    width: 500px;
+    box-shadow: 1px 10px 10px #000A;
+    background: linear-gradient(to right,#300130,  #9b049b);
+    border-radius: 15px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.detalhe-pizza {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.preco {
+    font-family: Impact;
+    font-size: 40px;
+    
+    color: white;
+    padding: 10px;
+
+    background: linear-gradient(to right, #9b049b, #300130);
+    box-shadow: 1px 10px 10px #000A;
+
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+.ingredientes-pizza {
+    color: #FFFA;
+    font-size: 20px;
+}

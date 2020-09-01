@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" type='text/css' href="./formulario.css">
+    <link rel="stylesheet" type='text/css' href="./snack.css">
+</head>
+
+<body>
+    <div>
+        <form onsubmit="confirmarPedido(event)">
+            <h2>Cadastro de Usuário</h2>
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" id="nome" placeholder="Informe seu nome" />
+            </div>
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="email" placeholder="Informe seu email" />
+            </div>
+            <div>
+                <label for="mail">Fone:</label>
+                <input type="text" id="fone" placeholder="(83) 98754-2514" />
+            </div>
+            <div>
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" placeholder="Informe a rua" />
+            </div>
+            <div>
+                <label for="mail">Número:</label>
+                <input type="text" id="numeroRua" />
+
+                <label for="mail">Bairro:</label>
+                <input type="text" id="bairro" />
+            </div>
+            <div>
+                <label for="mail">Cidade:</label>
+                <input type="text" id="cidade" placeholder="Informe a cidade" />
+            </div>
+
+            <button id="cancelar" onclick="return cancelarFn()">Cancelar</button>
+            <button id="confirmar">Confirmar pedido</button>
+
+        </form>
+        <div id="snackbar"></div>
+    </div>
+</body>
+
+<script>
+
+    function cancelarFn() {
+        location.href = '../cardapio.html'
+    }
+
+    function confirmarPedido(event) {
+        event.preventDefault()
+
+        const formulario = document.querySelectorAll('form input')
+        let camposValidos = true
+
+        for (i = 0; i < formulario.length; i++) {
+            if (formulario[i].value === '') {
+                camposValidos = false
+                break
+            }
+        }
+
+        let snackBar = document.getElementById("snackbar");
+
+        snackBar.innerHTML = camposValidos ?
+            'Seu pedido será preparado para entrega!!!'
+            : 'Por favor preencha todos os campos!!!'
+
+        snackBar.className = "show"
+
+        setTimeout(function () {
+            snackBar.classList.remove('show')
+            if (camposValidos) location.href = '../cardapio.html'
+        }, 3000)
+    }
+</script>
+
+</html>

@@ -1,0 +1,99 @@
+body {
+    background-color: #000;
+    background-image: url("https://i.vimeocdn.com/video/530015055_640x360.jpg");
+    background-size: cover;
+
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+
+    height: 100vh;
+    align-items: center;
+}
+
+h2{
+    color:#E5C282;
+}
+
+form {
+    margin: 0 auto;
+    width: 380px;
+    padding: 1.2em;
+    border: 1px solid #E5C282;
+    border-radius: 1em;
+    background-color: #260126;
+    color: #fff;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+}
+
+input {
+    border-radius: .7em;
+    padding: 5px 5px 5px 5px;
+    outline: 0px;
+
+    background: #dac8da;
+    color: #260126;
+
+    font: 1em sans-serif;
+
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    border: 1px solid #999;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    color: #260126;
+    -webkit-text-fill-color: #dac8da;
+    -webkit-box-shadow: 0 0 0px 1000px #dac8da inset;
+    -webkit-text-fill-color: #260126 !important;
+}
+
+input:focus {
+    border-color: #000;
+}
+
+input#numeroRua {
+    width: 70px;
+}
+
+input#bairro {
+    width: 150px;
+}
+
+button {
+    margin-top: 30px;
+
+    font-size: 1.1rem;
+    min-width: 150px;
+    border-radius: 10px;
+    background-color: #440144;
+    color: #E5C282;
+    padding: 6px;
+
+    outline: 0;
+    transition: 0.5s ease;
+    cursor: pointer;  
+}
+
+button#cancelar{
+    margin-right: 70px;
+}
+
+button:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 1px 1px #E5C282;
+    /* box-shadow: 5px 5px 5px rgba(0,0,0,0.6); */
+}
